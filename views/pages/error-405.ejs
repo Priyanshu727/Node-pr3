@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" lang="en">
+<html dir="ltr">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -23,8 +23,6 @@
       href="../assets/images/favicon.png"
     />
     <!-- Custom CSS -->
-    <link href="../assets/libs/flot/css/float-chart.css" rel="stylesheet" />
-    <!-- Custom CSS -->
     <link href="../dist/css/style.min.css" rel="stylesheet" />
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -35,76 +33,68 @@
   </head>
 
   <body>
-    <!-- ============================================================== -->
-    <!-- Preloader - style you can find in spinners.css -->
-    <!-- ============================================================== -->
-    <div class="preloader">
-      <div class="lds-ripple">
-        <div class="lds-pos"></div>
-        <div class="lds-pos"></div>
+    <div class="main-wrapper">
+      <!-- ============================================================== -->
+      <!-- Preloader - style you can find in spinners.css -->
+      <!-- ============================================================== -->
+      <div class="preloader">
+        <div class="lds-ripple">
+          <div class="lds-pos"></div>
+          <div class="lds-pos"></div>
+        </div>
       </div>
+      <!-- ============================================================== -->
+      <!-- Preloader - style you can find in spinners.css -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Login box.scss -->
+      <!-- ============================================================== -->
+      <div class="error-box">
+        <div class="error-body text-center">
+          <h1 class="error-title text-danger">405</h1>
+          <h3 class="text-uppercase error-subtitle">PAGE NOT FOUND !</h3>
+          <p class="text-muted mt-4 mb-4">
+            YOU SEEM TO BE TRYING TO FIND HIS WAY HOME
+          </p>
+          <a
+            href="/"
+            class="
+              btn btn-danger btn-rounded
+              waves-effect waves-light
+              mb-5
+              text-white
+            "
+            >Back to home</a
+          >
+        </div>
+      </div>
+      <!-- ============================================================== -->
+      <!-- Login box.scss -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Page wrapper scss in scafholding.scss -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Page wrapper scss in scafholding.scss -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Right Sidebar -->
+      <!-- ============================================================== -->
+      <!-- ============================================================== -->
+      <!-- Right Sidebar -->
+      <!-- ============================================================== -->
     </div>
     <!-- ============================================================== -->
-    <!-- Main wrapper - style you can find in pages.scss -->
-    <!-- ============================================================== -->
-    <div
-      id="main-wrapper"
-      data-layout="vertical"
-      data-navbarbg="skin5"
-      data-sidebartype="full"
-      data-sidebar-position="absolute"
-      data-header-position="absolute"
-      data-boxed-layout="full"
-    >
-      <!-- ============================================================== -->
-      <!-- Topbar header - style you can find in pages.scss -->
-      <!-- ============================================================== -->
-      <%- include('./partials/header.ejs') -%>
-      <!-- ============================================================== -->
-      <!-- End Topbar header -->
-      <!-- ============================================================== -->
-      <!-- ============================================================== -->
-      <!-- Left Sidebar - style you can find in sidebar.scss  -->
-      <!-- ============================================================== -->
-      <%- include('./partials/aside.ejs') -%>
-      <!-- ============================================================== -->
-      <!-- End Left Sidebar - style you can find in sidebar.scss  -->
-      <!-- ============================================================== -->
-      <!-- ============================================================== -->
-      <!-- Page wrapper  -->
-      <!-- ============================================================== -->
-      <%- include('./pages/index.ejs') -%>
-      <!-- ============================================================== -->
-      <!-- End Page wrapper  -->
-      <!-- ============================================================== -->
-    </div>
-    <!-- ============================================================== -->
-    <!-- End Wrapper -->
-    <!-- ============================================================== -->
-    <!-- ============================================================== -->
-    <!-- All Jquery -->
+    <!-- All Required js -->
     <!-- ============================================================== -->
     <script src="../assets/libs/jquery/dist/jquery.min.js"></script>
     <!-- Bootstrap tether Core JavaScript -->
     <script src="../assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../assets/libs/perfect-scrollbar/dist/perfect-scrollbar.jquery.min.js"></script>
-    <script src="../assets/extra-libs/sparkline/sparkline.js"></script>
-    <!--Wave Effects -->
-    <script src="../dist/js/waves.js"></script>
-    <!--Menu sidebar -->
-    <script src="../dist/js/sidebarmenu.js"></script>
-    <!--Custom JavaScript -->
-    <script src="../dist/js/custom.min.js"></script>
-    <!--This page JavaScript -->
-    <!-- <script src="../dist/js/pages/dashboards/dashboard1.js"></script> -->
-    <!-- Charts js Files -->
-    <script src="../assets/libs/flot/excanvas.js"></script>
-    <script src="../assets/libs/flot/jquery.flot.js"></script>
-    <script src="../assets/libs/flot/jquery.flot.pie.js"></script>
-    <script src="../assets/libs/flot/jquery.flot.time.js"></script>
-    <script src="../assets/libs/flot/jquery.flot.stack.js"></script>
-    <script src="../assets/libs/flot/jquery.flot.crosshair.js"></script>
-    <script src="../assets/libs/flot.tooltip/js/jquery.flot.tooltip.min.js"></script>
-    <script src="../dist/js/pages/chart/chart-page-init.js"></script>
+    <!-- ============================================================== -->
+    <!-- This page plugin js -->
+    <!-- ============================================================== -->
+    <script>
+      $(".preloader").fadeOut();
+    </script>
   </body>
 </html>
